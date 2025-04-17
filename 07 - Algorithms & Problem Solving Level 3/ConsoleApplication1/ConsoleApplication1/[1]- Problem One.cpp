@@ -33,5 +33,12 @@ int main()
 	LibFillArrayRandom::FillElementArraySquareingDynamicInRandomNumbersAndCharacter(array, row, column);
 	cout << "\n\nThe Matric is fill random number [ 1 - 100 ] \n";
 	printArray2D::printArray2Dimenional(array, row, column);
+
+
+	for (int i{ 0 }; i < row; i++)
+		delete[] array[i];
+
+	delete[]array;
+
 }
 

@@ -18,7 +18,7 @@ namespace LibFillArrayRandom {
 	int randomNumbers(int fram, int to) {
 
 		int numberRandom{};
-		numberRandom = (rand() % (to - fram + 1) + 1); // fram = 1 , to = 10 ( genarate the random number 1- 11 ) ( 11 not included ) 
+		numberRandom = (rand() % (to - fram + 1) + fram); // fram = 1 , to = 10 ( genarate the random number 1- 11 ) ( 11 not included ) 
 		return numberRandom; 
 
 	}
