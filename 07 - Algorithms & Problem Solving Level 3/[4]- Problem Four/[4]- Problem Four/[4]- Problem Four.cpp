@@ -91,13 +91,13 @@ int summationEachColumnInMatrix(int* matrix[], int& row, int& column) {
 
 void print1DArraySumationEachColumn(int* matrix[], int row, int column) {
 
-    for (int counter{ 0 }; counter < row; counter++)
+    for (int counter{ 0 }; counter < column; counter++)
     {
         cout << "Sum Column " << counter + 1;
 
 
         // space if the rows total more than 5 spaces     
-        int result = summationEachColumnInMatrix(matrix, column, counter);
+        int result = summationEachColumnInMatrix(matrix, row, counter);
         printf(" = [%-6d]\n", result);
     }
 }
