@@ -27,7 +27,7 @@ namespace LibFillArrayRandom {
 
 	//Function Fill array Squaring in random character Uppercase 
 
-	void readElementArraySquareing(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -36,7 +36,7 @@ namespace LibFillArrayRandom {
 
 	//Function Fill array Squaring in random character LowerCase   
 
-	void readElementArraySquareing(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -46,7 +46,7 @@ namespace LibFillArrayRandom {
 
 	//Function Fill array Squaring in random Numbers int 
 
-	void readElementArraySquareing(int array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -72,7 +72,7 @@ delete[] arrayDynamic[i];
 
 //Function Fill array Squaring in random Numbers int ( Dynamic )
 
-	voidFillElementArraySquareingDynamicInRandomNumbersAndCharacter(int* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
 			arrayDynamic[counter] = new char[sizeArray_Column];
@@ -89,7 +89,7 @@ delete[] arrayDynamic[i];
 	
 
 	//Function Fill array Squaring in random character Uppercase 
-	voidFillElementArraySquareingDynamicInRandomNumbersAndCharacter (char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
 			arrayDynamic[counter] = new char[sizeArray_Column];
@@ -101,7 +101,7 @@ delete[] arrayDynamic[i];
 	}
 
 	//Function Fill array Squaring in random character LowerCase 
-	voidFillElementArraySquareingDynamicInRandomNumbersAndCharacter(char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
 			arrayDynamic[counter] = new char[sizeArray_Column];
