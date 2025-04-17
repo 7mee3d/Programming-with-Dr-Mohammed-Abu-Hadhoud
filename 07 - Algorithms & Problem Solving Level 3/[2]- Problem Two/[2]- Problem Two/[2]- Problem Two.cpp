@@ -114,6 +114,7 @@ int main()
     printArray2Dimenional(matrix, row, column);
 
     //Summation each row in the Matrix 
+    cout << "\n\nThe Summation of each row in the matrix is results :\n";
     summationEachRowInMatrix(matrix, row, column , array1D );
     cout << endl<<endl;
     print1DArray_AccordingPromt("Sum Row ", array1D, row); 
