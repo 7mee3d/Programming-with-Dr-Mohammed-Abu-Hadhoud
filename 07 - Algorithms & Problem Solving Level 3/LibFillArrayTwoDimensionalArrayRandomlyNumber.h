@@ -7,14 +7,15 @@
 
 #include <time.h>
 
-int const kSIZE_COLUMN_FIXED{ 100 };
+int const kSIZE_COLUMN_FIXED_2{ 100 };
+
 using namespace std;
 
 
 namespace LibFillArrayRandom {
 
 
-	int randomNumbers(int& fram, int to) {
+	int randomNumbers(int fram, int to) {
 
 		int numberRandom{};
 		numberRandom = (rand() % (to - fram + 1) + 1); // fram = 1 , to = 10 ( genarate the random number 1- 11 ) ( 11 not included ) 
@@ -27,26 +28,26 @@ namespace LibFillArrayRandom {
 
 	//Function Fill array Squaring in random character Uppercase 
 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingStaticInRandomNumbersAndCharacterUpperCase(char array[][kSIZE_COLUMN_FIXED_2], int sizeArray_Row, int sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
-				arrayDynamic[counter][counterJ] = static_cast <char>(randomNumbers(65, 90));
+				array[counter][counterJ] = static_cast <char>(randomNumbers(65, 90));
 	}
 
 	//Function Fill array Squaring in random character LowerCase   
 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingStaticInRandomNumbersAndCharacterUpperCaseLowerCase(char array[][kSIZE_COLUMN_FIXED_2], int sizeArray_Row, int sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
-				arrayDynamic[counter][counterJ] = static_cast <char>(randomNumbers(97, 122));
+				array[counter][counterJ] = static_cast <char>(randomNumbers(97, 122));
 	}
 
 
 	//Function Fill array Squaring in random Numbers int 
 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int array[][kSIZE_COLUMN_FIXED], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int array[][kSIZE_COLUMN_FIXED_2], int& sizeArray_Row, int& sizeArray_Column) {
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -72,11 +73,8 @@ delete[] arrayDynamic[i];
 
 //Function Fill array Squaring in random Numbers int ( Dynamic )
 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(int* arrayDynamic[], int sizeArray_Row, int sizeArray_Column) {
 
-		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
-			arrayDynamic[counter] = new char[sizeArray_Column];
-		}
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -89,11 +87,8 @@ delete[] arrayDynamic[i];
 	
 
 	//Function Fill array Squaring in random character Uppercase 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacterUpperCase(char* arrayDynamic[], int sizeArray_Row, int sizeArray_Column) {
 
-		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
-			arrayDynamic[counter] = new char[sizeArray_Column];
-		}
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
@@ -101,11 +96,9 @@ delete[] arrayDynamic[i];
 	}
 
 	//Function Fill array Squaring in random character LowerCase 
-	void FillElementArraySquareingDynamicInRandomNumbersAndCharacter(char* arrayDynamic[], int& sizeArray_Row, int& sizeArray_Column) {
+	void FillElementArraySquareingDynamicInRandomNumbersAndCharacterLowerCase(char* arrayDynamic[], int sizeArray_Row, int sizeArray_Column) {
 
-		for (int counter{ 0 }; counter < sizeArray_Row; counter++) {
-			arrayDynamic[counter] = new char[sizeArray_Column];
-		}
+
 
 		for (int counter{ 0 }; counter < sizeArray_Row;counter++)
 			for (int counterJ{ 0 }; counterJ < sizeArray_Column; counterJ++)
