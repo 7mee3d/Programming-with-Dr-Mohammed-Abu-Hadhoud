@@ -11,7 +11,7 @@ int const kSIZE_COLUMN_FIXED{ 100 };
 using namespace std;
 
 
-namespace LibReadElementSquareMatrix {
+namespace LibFillArrayRandom {
 
 
 	int randomNumbers(int& fram, int to) {
